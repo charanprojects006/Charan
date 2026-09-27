@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f7fbff;
+    color: #183b56;
+}
+
+header {
+    height: 75px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #087ea4;
+}
+
+.logo span {
+    background: #087ea4;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #183b56;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #087ea4;
+}
+
+.hero {
+    min-height: 560px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(120deg, #eaf9ff, #ffffff);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #087ea4;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #087ea4;
+}
+
+.hero-content > p:not(.welcome) {
+    color: #607d8b;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #087ea4;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #065d7a;
+}
+
+.hero-card {
+    width: 300px;
+    height: 300px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.doctor-icon {
+    font-size: 85px;
+    margin-bottom: 15px;
+}
+
+.hero-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    color: #718792;
+    line-height: 1.5;
+}
+
+.services,
+.doctors {
+    padding: 80px 8%;
+    background: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    color: #087ea4;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    margin-top: 8px;
+}
+
+.service-container,
+.doctor-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.service-box {
+    width: 30%;
+    padding: 35px;
+    text-align: center;
+    border-radius: 15px;
+    background: #f7fbff;
+    border: 1px solid #e1f0f5;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.service-box h3 {
+    margin-bottom: 12px;
+}
+
+.service-box p {
+    color: #718792;
+    line-height: 1.6;
+}
+
+.doctors {
+    background: #f7fbff;
+}
+
+.doctor-box {
+    background: white;
+    width: 30%;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.doctor-photo {
+    font-size: 70px;
+    background: #eaf9ff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doctor-box h3 {
+    margin-bottom: 8px;
+}
+
+.doctor-box p {
+    color: #087ea4;
+    margin-bottom: 10px;
+}
+
+.doctor-box span {
+    color: #78909c;
+    font-size: 13px;
+}
+
+.appointment {
+    padding: 90px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    background: #eaf9ff;
+}
+
+.appointment-info {
+    width: 40%;
+    padding-top: 30px;
+}
+
+.appointment-info h2 {
+    font-size: 40px;
+    margin: 10px 0 20px;
+}
+
+.appointment-info > p:not(.welcome) {
+    color: #607d8b;
+    line-height: 1.7;
+}
+
+.info {
+    margin-top: 25px;
+}
+
+.info p {
+    margin: 14px 0;
+    font-weight: 600;
+}
+
+.form-container {
+    width: 50%;
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+input,
+select {
+    padding: 13px;
+    border: 1px solid #d5e3e9;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    border-color: #087ea4;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .input-group {
+    width: 50%;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #087ea4;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #065d7a;
+}
+
+.contact {
+    background: #183b56;
+    color: white;
+    padding: 45px 8%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.8;
+}
+
+.contact p {
+    color: #c8dce6;
+}
+
+footer {
+    background: #102d42;
+    color: #a9c0cc;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .service-container,
+    .doctor-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box,
+    .doctor-box {
+        width: 90%;
+    }
+
+    .appointment {
+        flex-direction: column;
+    }
+
+    .appointment-info,
+    .form-container {
+        width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
